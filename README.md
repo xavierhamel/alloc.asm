@@ -1,4 +1,4 @@
-## dalloc.asm 
+## alloc.asm 
 This is only a toy project. The goal was to learn assembler and how malloc worked internaly.
 This is a dynamic memory allocation library (like malloc) written in assembler for granular memory allocation. The implementation has some limitations, the maximum allocation for an object is 4060 bytes and the maximum amount of memory allocated for all the objects is around 1 megabyte. It is also only supported on macOS.
 
