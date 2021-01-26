@@ -6,6 +6,13 @@ The memory used is tracked in block of 16 bytes, therefore memory is allocated i
 
 All the dynamic memory allocation things are located inside `mem.asm`, all the functions for io (print and read from terminal) inside of `io.asm`.
 
+### Build the project
+```sh
+nasm -f macho64 main.asm
+ld -macosx_version_min 10.8 -lSystem -o main main.o 
+```
+
+### Usage
 **The prefix for all functions is `mem@`**
 ### `mem@init`
 This function will initialize the library. Must be called before any other functions
